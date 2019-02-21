@@ -58,11 +58,20 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Packages
 include vendor/revengeos/config/packages.mk
 
+# Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair
+
 # Props
 include vendor/revengeos/config/props.mk
 
 # RevengeUI
 include vendor/revengeui/config.mk
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelis$
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
