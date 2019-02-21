@@ -32,3 +32,15 @@ include $(BUILD_PREBUILT)
 # their rules should be written here.
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Lawnchair
+LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_DEX_PREOPT := false
+LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/$(LOCAL_SRC_FILES)
+include $(BUILD_PREBUILT)
