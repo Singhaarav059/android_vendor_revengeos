@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
 # RevengeOS packages
 PRODUCT_PACKAGES += \
     RetroMusicPlayer \
+    OmniJaws \
     ViaBrowser
 
 # World APN list
