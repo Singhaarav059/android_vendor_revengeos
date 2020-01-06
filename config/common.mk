@@ -60,7 +60,9 @@ include vendor/revengeos/config/packages.mk
 
 # Lawnchair
 PRODUCT_PACKAGES += \
-    Lawnchair
+    Lawnchair \
+    GalleryGoPrebuilt \
+    GBoardPrebuilt
 
 # Props
 include vendor/revengeos/config/props.mk
