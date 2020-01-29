@@ -29,6 +29,12 @@ PRODUCT_PACKAGES += \
     RetroMusicPlayer \
     ViaBrowser
 
+# RevengeDelta
+ifeq ($(REVENGEOS_BUILDTYPE),OFFICIAL)
+PRODUCT_PACKAGES += \
+   RevengeDelta
+endif
+
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
