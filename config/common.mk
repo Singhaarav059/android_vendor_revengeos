@@ -60,6 +60,7 @@ include vendor/revengeos/config/packages.mk
 
 # Lawnchair
 PRODUCT_PACKAGES += \
+    OPScreenRecorder \
     Lawnchair \
     GalleryGoPrebuilt \
     GBoardPrebuilt
