@@ -80,8 +80,8 @@ include vendor/revengeui/config.mk
 
 # Lawnchair
 PRODUCT_COPY_FILES += \
-    vendor/xtended/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
-    vendor/xtended/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+    vendor/revengeos/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/revengeos/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
