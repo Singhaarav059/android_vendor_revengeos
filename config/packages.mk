@@ -16,17 +16,10 @@
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Calendar \
-    ExactCalculator \
-    LatinIME \
-    Launcher3QuickStep \
-    messaging \
-    Stk \
-    Snap
+    Stk
 
 # RevengeOS packages
 PRODUCT_PACKAGES += \
-    RetroMusicPlayer \
     OmniJaws \
     WeatherIcons \
     ViaBrowser
